@@ -1,9 +1,13 @@
 import React from 'react'
 import { FC } from 'react'
 
-const Header: FC = () => (
+interface HeaderProps {
+  heading: string
+}
+
+const Header: FC<HeaderProps> = ({ heading }) => (
   <header>
-    <h1>Header</h1>
+    <h1>{heading}</h1>
   </header>
 )
 
