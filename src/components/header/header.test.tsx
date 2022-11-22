@@ -2,12 +2,18 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import Header from '.'
 
+const DESCRIPTION = 'We are team of creatively diverse.\s\sdriven.\s\sinnovative individuals working in various loctions from the world.'
 const HEADING = 'The creative crew'
 const SUBTITLE = 'Who we are'
 
 describe('Header component', () => {
   beforeEach(() => {
-    render(<Header heading={HEADING} subtitle={SUBTITLE} />)
+    render(
+      <Header
+        description={DESCRIPTION}
+        heading={HEADING}
+        subtitle={SUBTITLE}
+      />)
   })
 
   it('should display the heading', () => {
@@ -26,5 +32,9 @@ describe('Header component', () => {
     expect(subtitle).toBeInTheDocument()
   })
 
-  it.todo('should display the description')
+  it('should display the description', () => {
+    const description = screen.getByText(DESCRIPTION)
+
+    expect(description).toBeInTheDocument()
+  })
 })
