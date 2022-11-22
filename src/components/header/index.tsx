@@ -3,11 +3,18 @@ import { FC } from 'react'
 
 interface HeaderProps {
   heading: string
+  subtitle: string
 }
 
-const Header: FC<HeaderProps> = ({ heading }) => (
+const Header: FC<HeaderProps> = ({ heading, subtitle }) => (
   <header>
-    <h1>{heading}</h1>
+    <div>
+      <h1>{heading}</h1>
+    </div>
+
+    <div>
+      <h2>{subtitle}</h2>
+    </div>
   </header>
 )
 

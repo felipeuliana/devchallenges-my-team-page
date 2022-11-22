@@ -3,9 +3,11 @@ import { render, screen } from '@testing-library/react'
 import Header from '.'
 
 const HEADING = 'The creative crew'
+const SUBTITLE = 'Who we are'
+
 describe('Header component', () => {
   beforeEach(() => {
-    render(<Header heading={HEADING} />)
+    render(<Header heading={HEADING} subtitle={SUBTITLE} />)
   })
 
   it('should display the heading', () => {
@@ -16,7 +18,13 @@ describe('Header component', () => {
     expect(heading).toBeInTheDocument()
   })
 
-  it.todo('should display the subtitle')
+  it('should display the subtitle', () => {
+    const subtitle = screen.getByRole(
+      'heading', { level: 2, name: /who we are/i }
+    )
+
+    expect(subtitle).toBeInTheDocument()
+  })
 
   it.todo('should display the description')
 })
