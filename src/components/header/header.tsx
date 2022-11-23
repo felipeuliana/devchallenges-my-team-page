@@ -1,8 +1,7 @@
-import React from 'react'
-import { FC } from 'react'
+import React, { FC } from 'react'
 import styles from './header.module.css'
 
-interface HeaderProps {
+export interface HeaderProps {
   description: string
   heading: string
   subtitle: string
