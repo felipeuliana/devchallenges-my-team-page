@@ -1,19 +1,27 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { render, screen } from '@testing-library/react'
-import Header from '.'
+import Header from './header'
 
 const DESCRIPTION = 'We are team of creatively diverse.\s\sdriven.\s\sinnovative individuals working in various loctions from the world.'
 const HEADING = 'The creative crew'
 const SUBTITLE = 'Who we are'
 
 describe('Header component', () => {
+  let component: HTMLElement
+
   beforeEach(() => {
-    render(
+    const { container } = render(
       <Header
         description={DESCRIPTION}
         heading={HEADING}
         subtitle={SUBTITLE}
       />)
+
+    component = container
+  })
+
+  it('should render correctly', () => {
+    expect(component).toMatchSnapshot()
   })
 
   it('should display the heading', () => {

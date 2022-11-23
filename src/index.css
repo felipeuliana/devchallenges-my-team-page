@@ -6,10 +6,10 @@
 
   --typography-body-family: 'Poppins', sans-serif;
   --typography-heading-family: 'PT Serif', serif;
-  --typography-font-size: 0.875rem;
+  --typography-font-size: 1rem;
   --typography-font-style: normal;
   --typography-font-weight: 400;
-  --typography-line-height: 1.3125rem;
+  --typography-line-height: 1.5;
 
   font-family: var(--typography-body-family);
   font-size: var(--typography-font-size);
