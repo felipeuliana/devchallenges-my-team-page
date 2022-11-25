@@ -1,0 +1,33 @@
+// Vitest Snapshot v1
+
+exports[`Header component > should render correctly 1`] = `
+<div>
+  <header
+    class="_root_503ab9"
+  >
+    <div
+      class="_inner_503ab9"
+    >
+      <h1
+        class="_heading_503ab9"
+      >
+        The creative crew
+      </h1>
+    </div>
+    <div
+      class="_inner_503ab9"
+    >
+      <h2
+        class="_subtitle_503ab9"
+      >
+        Who we are
+      </h2>
+      <p
+        class="_description_503ab9"
+      >
+        We are team of creatively diverse.ssdriven.ssinnovative individuals working in various loctions from the world.
+      </p>
+    </div>
+  </header>
+</div>
+`;
