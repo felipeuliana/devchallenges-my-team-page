@@ -7,10 +7,11 @@ const IMAGE = {
   src: 'michael-dam-mEZ3PoFGs_k-unsplash.jpg'
 }
 const TITLE = 'Art director'
+const NAME = 'Saba Cabrera'
 
 describe('Team member card', () => {
   beforeEach(() => {
-    render(<Card image={IMAGE} title={TITLE} />)
+    render(<Card image={IMAGE} name={NAME} title={TITLE} />)
   })
 
   it('should display the team member image', () => {
@@ -21,10 +22,14 @@ describe('Team member card', () => {
   })
 
   it('should display the team member title', () => {
-    const title = screen.getByText(/art director/i)
+    const title = screen.getByText(TITLE)
 
     expect(title).toBeInTheDocument()
   })
 
-  it.todo('should display the team member name')
+  it('should display the team member name', () => {
+    const name = screen.getByText(NAME)
+
+    expect(name).toBeInTheDocument()
+  })
 })
