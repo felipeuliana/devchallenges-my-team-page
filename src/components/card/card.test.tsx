@@ -6,10 +6,11 @@ const IMAGE = {
   alt: 'Woman avatar image.',
   src: 'michael-dam-mEZ3PoFGs_k-unsplash.jpg'
 }
+const TITLE = 'Art director'
 
 describe('Team member card', () => {
   beforeEach(() => {
-    render(<Card image={IMAGE} />)
+    render(<Card image={IMAGE} title={TITLE} />)
   })
 
   it('should display the team member image', () => {
@@ -19,7 +20,11 @@ describe('Team member card', () => {
     expect(image).toHaveAttribute('alt', IMAGE.alt)
   })
 
-  it.todo('should display the team member title')
+  it('should display the team member title', () => {
+    const title = screen.getByText(/art director/i)
+
+    expect(title).toBeInTheDocument()
+  })
 
   it.todo('should display the team member name')
 })

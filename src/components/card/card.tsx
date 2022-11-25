@@ -5,11 +5,15 @@ interface CardProps {
     alt: string
     src: string
   }
+  title: string
 }
 
-const Card: FC<CardProps> = ({ image }) => (
+const Card: FC<CardProps> = ({ image, title }) => (
   <li>
-    <img alt={image.alt} src={image.src} />
+    <figure>
+      <img alt={image.alt} src={image.src} />
+      <figcaption>{title}</figcaption>
+    </figure>
   </li>
 )
 
