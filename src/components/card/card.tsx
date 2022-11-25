@@ -1,9 +1,16 @@
 import React, { FC } from 'react'
 
-const Card: FC = () => (
-  <div>
-    <h1>Card team member</h1>
-  </div>
+interface CardProps {
+  image: {
+    alt: string
+    src: string
+  }
+}
+
+const Card: FC<CardProps> = ({ image }) => (
+  <li>
+    <img alt={image.alt} src={image.src} />
+  </li>
 )
 
 export default Card
