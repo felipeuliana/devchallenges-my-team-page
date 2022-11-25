@@ -9,7 +9,7 @@ const IMAGE = {
 const TITLE = 'Art director'
 const NAME = 'Saba Cabrera'
 
-describe('Team member card', () => {
+describe('Card component', () => {
   let component: HTMLElement
 
   beforeEach(() => {
