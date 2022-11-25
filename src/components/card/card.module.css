@@ -1,0 +1,55 @@
+:root {
+  --card-width: 10rem;
+  --card-caption-right: -1.625rem;
+  --card-caption-top: 1.75rem;
+  --card-figure-height: 13.125rem;
+  --card-name-spacing: var(--spacing-base-ten);
+  --card-name-font-size: var(--typography-font-size-smaller);
+}
+
+.root {
+  display: block;
+  list-style: none;
+  max-width: var(--card-width);
+}
+
+.caption {
+  font-family: var(--typography-heading-family);
+  font-size: var(--typography-font-size-small);
+  font-weight: var(--typography-font-weight);
+  height: fit-content;
+  line-height: var(--typography-line-height-small);
+  top: var(--card-caption-top);
+  position: absolute;
+  right: var(--card-caption-right);
+  text-transform: uppercase;
+  transform: rotate(var(--rotate-angle));
+}
+
+.figure {
+  display: flex;
+  height: var(--card-figure-height);
+  margin: 0;
+  position: relative;
+}
+
+.name {
+  display: inline-block;
+  font-family: var(--typography-body-family);
+  font-style: var(--typography-font-style);
+  font-weight: var(--typography-font-weight-bold);
+  font-size: var(--card-name-font-size);
+  line-height: var(--typography-line-height);
+  margin: var(card-name-spacing) 0;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --card-width: 16.5rem;
+    --card-figure-height: 21.5rem;
+    --card-caption-top: 2.0625rem;
+    --card-name-spacing: calc(var(--spacing-base-ten) * 1.5);
+    --card-name-font-size: var(--typography-font-size-big);
+    --typography-font-size-small: 0.75rem;
+  }
+}

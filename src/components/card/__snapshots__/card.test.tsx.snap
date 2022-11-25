@@ -1,0 +1,28 @@
+// Vitest Snapshot v1
+
+exports[`Team member card > should render correctly 1`] = `
+<div>
+  <li
+    class="_root_c37972"
+  >
+    <figure
+      class="_figure_c37972"
+    >
+      <img
+        alt="Woman avatar image."
+        src="michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+      />
+      <figcaption
+        class="_caption_c37972"
+      >
+        Art director
+      </figcaption>
+    </figure>
+    <h2
+      class="_name_c37972"
+    >
+      Saba Cabrera
+    </h2>
+  </li>
+</div>
+`;

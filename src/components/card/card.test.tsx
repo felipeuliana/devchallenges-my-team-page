@@ -10,8 +10,18 @@ const TITLE = 'Art director'
 const NAME = 'Saba Cabrera'
 
 describe('Team member card', () => {
+  let component: HTMLElement
+
   beforeEach(() => {
-    render(<Card image={IMAGE} name={NAME} title={TITLE} />)
+    const { container } = render(
+      <Card image={IMAGE} name={NAME} title={TITLE} />
+    )
+
+    component = container
+  })
+
+  it('should render correctly', () => {
+    expect(component).toMatchSnapshot()
   })
 
   it('should display the team member image', () => {
