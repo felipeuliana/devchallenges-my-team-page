@@ -1,9 +1,14 @@
 import React, { FC } from 'react'
+import Card, { CardProps } from '../card/card'
 
-const Grid: FC = () => (
-  <div>
-    <h1>Grid</h1>
-  </div>
+interface GridProps {
+  cards: CardProps[]
+}
+
+const Grid: FC<GridProps> = ({ cards = [] }) => (
+  <ul>
+    {cards.map((card, key) => <Card key={key} {...card} />)}
+  </ul>
 )
 
 export default Grid

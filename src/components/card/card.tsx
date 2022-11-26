@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styles from './card.module.css'
 
-interface CardProps {
+export interface CardProps {
   image: {
     alt: string
     src: string
