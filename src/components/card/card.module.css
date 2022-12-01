@@ -1,7 +1,7 @@
 :root {
-  --card-width: 10rem;
-  --card-caption-right: -1.625rem;
-  --card-caption-top: 1.75rem;
+  --card-width: 8.625rem;
+  --card-caption-right: -5.3125rem;
+  --card-caption-top: 3.875rem;
   --card-figure-height: 13.125rem;
   --card-name-spacing: var(--spacing-base-ten);
   --card-name-font-size: var(--typography-font-size-smaller);
@@ -10,27 +10,35 @@
 .root {
   display: block;
   list-style: none;
+  margin-bottom: 1rem;
   max-width: var(--card-width);
+  position: relative;
+}
+
+.root:nth-of-type(even) {
+  margin-top: 2rem;
 }
 
 .caption {
   font-family: var(--typography-heading-family);
   font-size: var(--typography-font-size-small);
   font-weight: var(--typography-font-weight);
-  height: fit-content;
   line-height: var(--typography-line-height-small);
   top: var(--card-caption-top);
   position: absolute;
   right: var(--card-caption-right);
   text-transform: uppercase;
   transform: rotate(var(--rotate-angle));
+  text-align: left;
+  width: 100%;
 }
 
 .figure {
   display: flex;
   height: var(--card-figure-height);
+  justify-content: center;
   margin: 0;
-  position: relative;
+  overflow: hidden;
 }
 
 .name {
@@ -45,11 +53,22 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --card-width: 16.5rem;
+    --card-width: 14.875rem;
     --card-figure-height: 21.5rem;
-    --card-caption-top: 2.0625rem;
+    --card-caption-top: 7rem;
+    --card-caption-right: -8.5625rem;
     --card-name-spacing: calc(var(--spacing-base-ten) * 1.5);
     --card-name-font-size: var(--typography-font-size-big);
     --typography-font-size-small: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .root {
+    margin-top: 0;
+  }
+
+  .root:nth-of-type(3n - 1) {
+    margin-top: 4rem;
   }
 }
