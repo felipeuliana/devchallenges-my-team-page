@@ -1,0 +1,19 @@
+:root {
+  --grid-gap: 3rem;
+  --grid-justify: flex-start;
+}
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--grid-gap);
+  justify-content: var(--grid-justify);
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --grid-gap: 8rem;
+  }
+}

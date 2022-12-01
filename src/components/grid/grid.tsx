@@ -1,13 +1,13 @@
-import React, { FC } from 'react'
-import Card, { CardProps } from '../card/card'
+import React, { FC, ReactElement } from 'react'
+import styles from './grid.module.css'
 
 interface GridProps {
-  cards: CardProps[]
+  children: ReactElement[]
 }
 
-const Grid: FC<GridProps> = ({ cards = [] }) => (
-  <ul>
-    {cards.map((card, key) => <Card key={key} {...card} />)}
+const Grid: FC<GridProps> = ({ children = [] }) => (
+  <ul className={styles.root}>
+    {children}
   </ul>
 )
 
