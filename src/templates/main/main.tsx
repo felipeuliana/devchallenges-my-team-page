@@ -1,10 +1,15 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
+import Header, { HeaderProps } from '../../components/header/header'
 
-const Main: FC = () => {
+interface MainProps {
+  header: HeaderProps
+}
+
+const Main: FC<MainProps> = ({ header }) => {
   return (
-    <>
-      <h1>Main Template</h1>
-    </>
+    <main>
+      <Header data-testid='main-header' {...header} />
+    </main>
   )
 }
 

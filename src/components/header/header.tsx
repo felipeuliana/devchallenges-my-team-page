@@ -7,8 +7,13 @@ export interface HeaderProps {
   subtitle: string
 }
 
-const Header: FC<HeaderProps> = ({ description, heading, subtitle }) => (
-  <header className={styles.root} data-testid="header">
+const Header: FC<HeaderProps> = ({
+  description,
+  heading,
+  subtitle,
+  ...props
+}) => (
+  <header className={styles.root} {...props}>
     <div className={styles.inner}>
       <h1 className={styles.heading}>{heading}</h1>
     </div>
