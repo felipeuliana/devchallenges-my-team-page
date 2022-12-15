@@ -1,11 +1,12 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import Main from './main'
 import { HEADER } from '../../mocks/header'
+import { CARDS } from '../../mocks/cards'
 
 describe('Main template', () => {
   beforeEach(() => {
-    render(<Main header={HEADER} />)
+    render(<Main header={HEADER} cards={CARDS} />)
   })
 
   it('should display the header', () => {
@@ -14,5 +15,10 @@ describe('Main template', () => {
     expect(header).toBeInTheDocument()
   })
 
-  it.todo('should display the team members cards')
+  it('should display the team members cards', () => {
+    const cards = screen.getByTestId('main-cards')
+
+    expect(cards).toBeInTheDocument()
+    expect(within(cards).getAllByRole('listitem')).toHaveLength(6)
+  })
 })

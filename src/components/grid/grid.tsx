@@ -5,8 +5,8 @@ interface GridProps {
   children: ReactElement[]
 }
 
-const Grid: FC<GridProps> = ({ children = [] }) => (
-  <ul className={styles.root}>
+const Grid: FC<GridProps> = ({ children = [], ...props }) => (
+  <ul className={styles.root} {...props}>
     {children}
   </ul>
 )
