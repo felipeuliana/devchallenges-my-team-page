@@ -1,0 +1,173 @@
+// Vitest Snapshot v1
+
+exports[`Main template > should render correctly 1`] = `
+<main
+  class="_root_41db96"
+>
+  <header
+    class="_root_503ab9"
+    data-testid="main-header"
+  >
+    <div
+      class="_inner_503ab9"
+    >
+      <h1
+        class="_heading_503ab9"
+      >
+        The creative crew
+      </h1>
+    </div>
+    <div
+      class="_inner_503ab9"
+    >
+      <h2
+        class="_subtitle_503ab9"
+      >
+        Who we are
+      </h2>
+      <p
+        class="_description_503ab9"
+      >
+        We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.
+      </p>
+    </div>
+  </header>
+  <ul
+    class="_root_648350"
+    data-testid="main-cards"
+  >
+    <li
+      class="_root_c37972"
+    >
+      <figure
+        class="_figure_c37972"
+      >
+        <img
+          alt="Avatar of Terry Medhurst"
+          src="https://robohash.org/hicveldicta.png"
+        />
+        <figcaption
+          class="_caption_c37972"
+        >
+          Product owner
+        </figcaption>
+      </figure>
+      <h2
+        class="_name_c37972"
+      >
+        Terry Medhurst
+      </h2>
+    </li>
+    <li
+      class="_root_c37972"
+    >
+      <figure
+        class="_figure_c37972"
+      >
+        <img
+          alt="Avatar of Sheldon Quigley"
+          src="https://robohash.org/doloremquesintcorrupti.png"
+        />
+        <figcaption
+          class="_caption_c37972"
+        >
+          Art director
+        </figcaption>
+      </figure>
+      <h2
+        class="_name_c37972"
+      >
+        Sheldon Quigley
+      </h2>
+    </li>
+    <li
+      class="_root_c37972"
+    >
+      <figure
+        class="_figure_c37972"
+      >
+        <img
+          alt="Avatar of Terrill Hills"
+          src="https://robohash.org/consequunturautconsequatur.png"
+        />
+        <figcaption
+          class="_caption_c37972"
+        >
+          Tech Lead
+        </figcaption>
+      </figure>
+      <h2
+        class="_name_c37972"
+      >
+        Terrill Hills
+      </h2>
+    </li>
+    <li
+      class="_root_c37972"
+    >
+      <figure
+        class="_figure_c37972"
+      >
+        <img
+          alt="Avatar of Miles Cummerata"
+          src="https://robohash.org/facilisdignissimosdolore.png"
+        />
+        <figcaption
+          class="_caption_c37972"
+        >
+          UX Designer
+        </figcaption>
+      </figure>
+      <h2
+        class="_name_c37972"
+      >
+        Miles Cummerata
+      </h2>
+    </li>
+    <li
+      class="_root_c37972"
+    >
+      <figure
+        class="_figure_c37972"
+      >
+        <img
+          alt="Avatar of Mavis Schultz"
+          src="https://robohash.org/adverovelit.png"
+        />
+        <figcaption
+          class="_caption_c37972"
+        >
+          Developer
+        </figcaption>
+      </figure>
+      <h2
+        class="_name_c37972"
+      >
+        Mavis Schultz
+      </h2>
+    </li>
+    <li
+      class="_root_c37972"
+    >
+      <figure
+        class="_figure_c37972"
+      >
+        <img
+          alt="Avatar of Alison Reichert"
+          src="https://robohash.org/laboriosamfacilisrem.png"
+        />
+        <figcaption
+          class="_caption_c37972"
+        >
+          Developer
+        </figcaption>
+      </figure>
+      <h2
+        class="_name_c37972"
+      >
+        Alison Reichert
+      </h2>
+    </li>
+  </ul>
+</main>
+`;

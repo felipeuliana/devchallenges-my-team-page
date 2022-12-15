@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import Header, { HeaderProps } from '../../components/header/header'
 import Card, { CardProps } from '../../components/card/card'
 import Grid from '../../components/grid/grid'
+import styles from './main.module.css'
 
 interface MainProps {
   header: HeaderProps
@@ -12,7 +13,7 @@ const Main: FC<MainProps> = ({ cards = [], header }) => {
   const showCards = Boolean(cards.length)
 
   return (
-    <main>
+    <main className={styles.root}>
       <Header data-testid='main-header' {...header} />
 
       {showCards && (

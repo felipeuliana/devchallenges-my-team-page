@@ -1,12 +1,20 @@
 import React from 'react'
 import { render, screen, within } from '@testing-library/react'
 import Main from './main'
-import { HEADER } from '../../mocks/header'
 import { CARDS } from '../../mocks/cards'
+import { HEADER } from '../../mocks/header'
 
 describe('Main template', () => {
+  let template: ChildNode | null
+
   beforeEach(() => {
-    render(<Main header={HEADER} cards={CARDS} />)
+    const { container } = render(<Main header={HEADER} cards={CARDS} />)
+
+    template = container.firstChild
+  })
+
+  it('should render correctly', () => {
+    expect(template).toMatchSnapshot()
   })
 
   it('should display the header', () => {
