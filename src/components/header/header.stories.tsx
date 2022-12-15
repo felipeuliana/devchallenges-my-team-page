@@ -8,7 +8,7 @@ const HeaderMeta: ComponentMeta<typeof Header> = {
     ...HEADER
   },
   component: Header,
-  title: 'Header'
+  title: 'Components/Header'
 }
 
 export const Default: ComponentStory<typeof Header> = (args) => (

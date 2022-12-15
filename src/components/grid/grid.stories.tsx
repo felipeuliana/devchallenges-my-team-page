@@ -6,7 +6,7 @@ import { CARDS } from '../../mocks/cards'
 
 const GridMeta: ComponentMeta<typeof Grid> = {
   component: Grid,
-  title: 'Grid'
+  title: 'Components/Grid'
 }
 
 export const Default: ComponentStory<typeof Grid> = (args) => (

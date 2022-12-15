@@ -12,7 +12,7 @@ const CardMeta: ComponentMeta<typeof Card> = {
     title: 'Art director'
   },
   component: Card,
-  title: 'Card'
+  title: 'Components/Card'
 }
 
 export const Default: ComponentStory<typeof Card> = (args) => (
