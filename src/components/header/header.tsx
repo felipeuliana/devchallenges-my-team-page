@@ -8,7 +8,7 @@ export interface HeaderProps {
 }
 
 const Header: FC<HeaderProps> = ({ description, heading, subtitle }) => (
-  <header className={styles.root}>
+  <header className={styles.root} data-testid="header">
     <div className={styles.inner}>
       <h1 className={styles.heading}>{heading}</h1>
     </div>

@@ -1,12 +1,11 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import Header from './header'
+import { HEADER } from '../../mocks/header'
 
 const HeaderMeta: ComponentMeta<typeof Header> = {
   args: {
-    description: 'We are team of creatively diverse.  driven.  innovative individuals working in various loctions from the world.',
-    heading: 'The creative crew',
-    subtitle: 'Who we are'
+    ...HEADER
   },
   component: Header,
   title: 'Header'

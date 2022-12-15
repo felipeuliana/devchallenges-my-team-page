@@ -3,21 +3,14 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import Header from './header'
-
-const DESCRIPTION = 'We are team of creatively diverse.\s\sdriven.\s\sinnovative individuals working in various loctions from the world.'
-const HEADING = 'The creative crew'
-const SUBTITLE = 'Who we are'
+import { HEADER } from '../../mocks/header'
 
 describe('Header component', () => {
   let component: HTMLElement
 
   beforeEach(() => {
     const { container } = render(
-      <Header
-        description={DESCRIPTION}
-        heading={HEADING}
-        subtitle={SUBTITLE}
-      />)
+      <Header {...HEADER} />)
 
     component = container
   })
@@ -43,7 +36,9 @@ describe('Header component', () => {
   })
 
   it('should display the description', () => {
-    const description = screen.getByText(DESCRIPTION)
+    const description = screen.getByText(
+      /we are team of creatively diverse\. driven\. innovative individuals working in various locations from the world\./i
+    )
 
     expect(description).toBeInTheDocument()
   })
